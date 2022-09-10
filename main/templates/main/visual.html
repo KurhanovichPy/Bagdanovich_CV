@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %} Visualization {% endblock %}
+{% block main %}
+    <div class="center-container-viz">
+        {% for image in images %}
+            {% if image.orientation == 'vertical' %}
+                <img class="visual-images-vertical" src="{{image.image.url}}">
+            {% else %}
+                <img class="visual-images-horizontal" src="{{image.image.url}}">
+            {% endif%}
+        {% endfor %}
+    </div>
+{% endblock %}

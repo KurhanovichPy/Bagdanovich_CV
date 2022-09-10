@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %} Contacts {% endblock %}
+{% block main %}
+    <div class="center-container">
+        <div class="left-container">
+            <div class="contact-line">
+                <img class="icons" src="{% static 'main/img/../../static/main/img/address_location.ico' %}">
+                <p class="contact-text">Wroclaw, Poland</p>
+            </div>
+            <div class="contact-line">
+                <img class="icons" src="{% static 'main/img/../../static/main/img/contact_email.ico' %}">
+                <p class="contact-text">yana.bagdanovich@gmail.com</p>
+            </div>
+            <div class="contact-line">
+                <img class="icons" src="{% static 'main/img/../../static/main/img/contact_us_telephone.ico' %}">
+                <p class="contact-text">phone/whatsapp: +48 506897885</p>
+            </div>
+            <ul class="net">
+                <li>
+                    <a href="https://www.instagram.com/yana_bagdanovich/" target="_blank" > Instagram </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/yana.bagdanovich/" target="_blank" > Facebook </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/yanabagdan6de2" target="_blank" > Behance </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yana-bagdanovich-8b3921238/" target="_blank" > LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

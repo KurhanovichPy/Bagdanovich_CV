@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+{% block main %}
+    <div class="wrapper">
+        <div class="info">
+            <div class="name">
+                <h1 class="name">Yana</h1>
+                <h1 class="name" style="padding-left: 50px"> Bagdanovich</h1>
+            </div>
+            <div class="text-left">
+                <p>Hello. I'm Yana.</p>
+                <p style="text-indent: 20px;">I'm design Engineer, architect and CG Artist based in Wroclaw.
+                    I graduated from the Belarusian National Technical University in Minsk with a degree in industrial
+                    and civil engineering in 2016.</p>
+                <p style="text-indent: 20px;">Worked in Zrobim Architects and ASGP. Developed many working drawings for
+                    interior design and private houses. Performed visualization for projects.</p>
+                <p style="text-indent: 20px;">Skilled in AutoCAD, Revit, SketchUp, Adobe Design Programs,
+                    3D Studio Max and Corona renderer.</p>
+                <p style="text-indent: 20px;">Took part in and completed more than 20 projects in architecture
+                    and interior design.</p>
+            </div>
+        </div>
+        <img class="main-img" src="{% static 'main/img/../../static/main/img/main_foto_2.jpg' %}" alt="photo" width="550px" height=auto>
+    </div>
+{% endblock %}

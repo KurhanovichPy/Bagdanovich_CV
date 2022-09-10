@@ -1,0 +1,371 @@
+body {
+    position:relative;
+    min-height: 100vh;
+    background-color: #f7f3f0;
+    outline: 10px solid black;
+    outline-offset: -10px;
+}
+header{
+    padding: 50px 8%;
+}
+.wrapper{
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.nav{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+
+
+}
+.nav>li>a{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    transition: width 0.3s ease-out;
+}
+.nav>li>a:hover{
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+.net {
+    margin-bottom: 5px;
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
+.net>li>a{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    transition: width 0.3s ease-out;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+.net>li>a:hover:hover{
+    border-bottom: none;
+}
+
+.name{
+    font-size: 90px;
+    margin: 0 auto;
+}
+p{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.text-left{
+    width: 50%;
+    margin-right: 0;
+    margin-left: 45%;
+}
+.projects-container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 2%;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+.center-container{
+    padding-left: 38%;
+    padding-right: 8%;
+    padding-top: 133px;
+    height: calc(100vh - 266px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+.center-container-viz {
+    padding-left: 8%;
+    padding-right: 8%;
+    height: calc(100vh - 133px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.left-container{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.left-container>p{
+    margin-top: 0;
+}
+
+.project{
+    display: flex;
+    margin-right: 40px;
+    width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.project-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 250px;
+    height: 350px;
+
+
+}
+.project-main-photo{
+    width: 250px;
+    transition: filter .7s ease-in-out;
+    -webkit-filter: grayscale(99%);
+    filter: grayscale(99%);
+}
+
+.project-main-photo:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.title{
+    justify-content: center;
+    padding-top: 0;
+}
+.description{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    padding-right: 50px;
+    width: 40%;
+}
+.project-images{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 60%;
+    height: calc(100vh - 123px);
+}
+
+.visual-images-vertical{
+    height: calc(100vh - 133px);
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.visual-images-horizontal{
+    height: auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.project-description-container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 8%;
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.icons{
+    height: 20px;
+    width: auto;
+}
+
+.contact-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-text{
+    margin: 10px;
+}
+
+h1{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media (max-width:1200px) {
+ .wrapper{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.info{
+    width: 90%;
+}
+
+.text-left{
+    width: 98%;
+    margin: 20px;
+}
+
+.name{
+     font-size: 30px;
+}
+
+.main-img{
+    width: 50%;
+    height: auto;
+}
+
+
+.projects-container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 2%;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+}
+
+@media (max-width:800px) {
+.wrapper{
+    flex-direction: column;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.info{
+    width: 90%;
+}
+
+.text-left{
+    width: 98%;
+    margin: 20px;
+}
+
+.name{
+     font-size: 30px;
+}
+
+.main-img{
+    width: 100%;
+    height: auto;
+}
+
+.center-container{
+    padding-left: 18%;
+    padding-right: 8%;
+    padding-top: 15%;
+    height: calc(100vh - 266px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.project-description-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-right: 10px;
+}
+
+.description{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    padding-right: 10px;
+    width: 90%;
+}
+
+.project-images{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 90%;
+    height: calc(100vh - 123px);
+}
+
+.project{
+    display: flex;
+    margin-right: 0;
+    width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.net {
+    margin-bottom: 5px;
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.net>li{
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width:320px) {
+.wrapper{
+    flex-direction: column;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.info{
+    width: 90%;
+}
+
+.text-left{
+    width: 98%;
+    margin: 20px;
+}
+
+.name{
+     font-size: 30px;
+}
+
+.main-img{
+    width: 100%;
+    height: auto;
+}
+
+.center-container{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 15%;
+    height: calc(100vh - 266px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.contact-text{
+    letter-spacing: -1px;
+}
+}

@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %} Projects {% endblock %}
+{% block main %}
+    <div class="projects-container title">
+        <p> Projects</p>
+    </div>
+    <div class="projects-container">
+        {% for project in projects %}
+            <div class="project">
+                <div class="project-img">
+                    <a href="/project/{{ project.id }}">
+                        <img class="project-main-photo" src="{{ project.main_image.url }}" alt="project-photo">
+                    </a>
+                </div>
+                <p>#{{ project.id }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="projects-container title">
+        <p> Visualizations</p>
+    </div>
+    <div class="projects-container">
+    {% for visual in visuals %}
+        <div class="project">
+            <div class="project-img">
+                <a href="/visual/{{ visual.id }}">
+                    <img class="project-main-photo" src="{{ visual.main_image.url }}" alt="project-photo">
+                </a>
+            </div>
+            <p>#{{ visual.id }}</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
